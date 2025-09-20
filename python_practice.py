@@ -1,0 +1,153 @@
+# # count the total numbers of characters in string..
+
+# st= input("enter the name:")
+
+# count=0
+
+# for i in st:
+#     count=count+1
+# print(count)
+
+
+
+
+# #count the total numbers of words in the string
+
+# st=input("Enter the string:")
+# st1=st.split()
+# count=0
+
+# for i in st1:
+#     count=count+1
+# print(count)
+
+
+
+
+# #count the upper case char in the string...
+
+# st=input("enter the string:")
+
+# count=0
+
+# for i in st:
+#     if i.isupper():
+#         count=count+1
+# print(count)
+
+
+
+
+
+# #count the number of VoWels in the string
+
+# st=input("Enter the string :")
+
+# count=0
+
+# Vowels="AEIOUaeiou"
+
+# for i in st:
+#     if i in Vowels:
+#         count=count+1
+# print(count)
+
+
+
+
+
+
+# # count the special char in to the string
+
+# st=input("Enter the string:")
+# count=0
+# import string
+
+# lower=string.ascii_letters
+# print(lower)
+
+# for i in st:
+#     if i not in lower:
+#         count=count+1
+# print(count)
+
+
+
+
+
+
+# #count the occurence of each vowel
+
+# st=input("enter the string:")
+
+# vowel="aeiou"
+
+# d={ }.fromkeys(vowel,0)
+
+# for i in st:
+#     if i in d:
+#         d[i]=d[i]+1
+# print(d)
+
+
+
+
+
+# # count the occurence of each char in to the string
+
+# st=input("Enter the string:")
+
+# st1=set(st)
+
+# d={ }.fromkeys(st1,0)
+
+# for i in st:
+#     if i in d:
+#         d[i]=d[i]+1
+# print(d)
+
+
+
+
+# #fetch the char if the word have even number of char
+
+# st=input("enter the string:")
+
+# st1=st.split()
+# NewList=[]
+# for i in st1:
+#     if len(i)%2==0:
+#         NewList.append(i)
+# print(NewList)
+
+
+
+
+
+# #fetch the word has starts with capital latter
+
+# st=input("Enter the string:")
+# st1=st.split()
+
+# NewList=[]
+
+# import string
+# lower=string.ascii_uppercase
+
+# for i in st1:
+#     if i[0] in lower:
+#         NewList.append(i)
+# print(NewList)
+
+
+
+# #fetch the word is start and end with consonent (not in vowels)
+
+# st=input("enter the string:")
+# st1=st.split()
+
+# NewList=[]
+# for i in st1:
+#     if i[0].lower() not in "aeiou" and i[-1].lower() not in "aeiou":
+#         NewList.append(i)
+# print(NewList)
