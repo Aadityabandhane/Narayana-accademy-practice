@@ -151,3 +151,87 @@
 #     if i[0].lower() not in "aeiou" and i[-1].lower() not in "aeiou":
 #         NewList.append(i)
 # print(NewList)
+
+
+
+
+# #write a program for fetching vowels in the string
+
+# st=input("Enter the string:")
+
+# v="aeiou"
+
+# allvowels=[]
+
+# for i in st:
+#     if i in v:
+#         allvowels.append(i)
+# print(allvowels)
+
+
+
+
+
+
+# #write a program for fetching all consonents in the string
+
+# st=input("Enter the string:")
+
+# v="aeiou"
+
+# allvowels=[]
+
+# for i in st:
+#     if i not in v:
+#         allvowels.append(i)
+# print(allvowels)
+
+
+
+
+# #fetch the first char of the word in sentence
+
+# st=input("Enter string :")
+# st1=st.split()
+
+# print([i[0]for i in st1])
+    
+
+
+# #fetch the last char of the word in sentence
+
+# st=input("Enter the string:")
+
+# st1=st.split()
+
+# print([i[-1] for i in st1])
+
+
+
+# #fetch the first and last char of the word in sentence
+
+# st=input("Enter the string:")
+
+# st1=st.split()
+
+# print([i[0] + i[-1] for i in st1])
+
+
+
+# # fetching specieal char into the string 
+
+# st=input("Enter the string :")
+
+# import string
+
+# string.ascii_letters
+# string.digits
+
+# print([ i for i in st if i not in string.ascii_letters and i not in string.digits and i != " "])
+
+
+
+
+
+
+
