@@ -233,5 +233,90 @@
 
 
 
+# #reverse the given string..
+
+# st=input("Enter the string :")
+
+# # st1=" ".join(reversed(st))
+# # print(st1)
+
+# # print(st[-1::-1])
+
+# st1=''
+# for i in st:
+#     st1=i+st1
+# print(st1)
+
+
+
+
+# # write a program to sort the string into the ascending order..
+
+# st=input("Enter the string :")
+
+# st1=" ".join(sorted(st))
+
+# print(st1)
+
+
+# # decending 
+
+# st=input("Enter the string :")
+
+# st1=" ".join(sorted(st , reverse=True))
+
+# print(st1)
+
+
+
+# # reverse the sentence 
+
+# st=input("Enter the string :")
+
+# st1=st.split()
+# output=""
+
+# for i in st1:
+#     output=i+" " +output
+# print(output)
+
+
+
+
+# # swapping the cases into the given string 
+
+# st=input("Enter the string :")
+
+# st1=""
+
+# for i in st:
+#     if i.isupper():
+#         st1=st1+i.lower()
+#     elif i.islower():
+#         st1=st1+i.upper()
+# print(st1)
+
+
+
+
+# # interchangeing key and value in dictionary
+
+# st={"name":"Aaditya","surename": " bandhane" , "Mobile": 9324631068}
+
+# print({value:key for key,value in st.items()})
+
+
+
+
+# # finding the squeres of all even numbers
+
+# lst=[1,2,3,4,5,6,7,8,9]
+
+# squeres=[]
+
+# for i in lst:
+#     if i%2==0:
+#         squeres.append(i*i)
+# print(squeres)
 
 
