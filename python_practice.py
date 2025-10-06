@@ -320,3 +320,52 @@
 # print(squeres)
 
 
+
+
+# # reverse the dictionary
+
+# d={"a":10,"b":20,"c":30}
+
+# lst=(list(d.items()))
+# lst.reverse()
+
+# d1={}
+
+# for key,value in lst:
+#     d1[key]=value
+# print(d1)
+
+
+
+
+
+# #fetch unique elements from list 
+
+# lst=[1,2,3,4,1,2,4]
+
+# # print(list(set(lst)))
+
+# lst1=[]
+
+# for i in lst:
+#     if i not in lst1:
+#         lst1.append(i)
+# print(lst1)
+
+
+
+
+
+# # fetch the integer type values from the list
+
+# lst=[1,"as", True,52,"asas"]
+
+# lst1=[]
+
+# for i in lst:
+#     if type(i) is int:
+#         lst1.append(i)
+# print(lst1)
+
+
+
