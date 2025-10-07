@@ -369,3 +369,98 @@
 
 
 
+
+
+
+# #write a count of char repeting more time in string
+
+# st=input("Enter the string :")
+
+# d={}.fromkeys(set(st),0)
+
+# for i in st:
+#     d[i]=d[i]+1
+
+# print(d)
+
+
+
+
+# # fetch all pallindrom word into the list
+
+# lst=["python","nen","cource","madam"]
+
+# pallindroms=[]
+
+# for i in lst:
+#     if i==i[-1::-1]:
+#         pallindroms.append(i)
+# print(pallindroms)
+
+
+
+
+
+# # reversce the words into the given string
+
+# st=input("Enter the string :")
+
+# st1=st.split()
+
+# print(" ".join(st1[-1::-1]))
+
+
+
+
+# # revercse the each char into the words
+
+# st=input("enter the string :")
+
+# st1=st.split()
+
+# newlst=[]
+
+# for i in st1:
+#     newlst.append(i[-1::-1])
+
+# print(" ".join(newlst))
+
+
+
+
+# #fetch the longest word and shortest word
+
+# st="aadi aaditya bandhane"
+
+# print([i for i in st.split() if len(i)== max([len(i) for i in st.split()])])
+# print([i for i in st.split() if len(i)== min([len(i) for i in st.split()])])
+
+
+
+
+# # find the index number of occured into the string
+
+# st=" aaditya bandhane"
+
+# char=input("enter the character :")
+
+# for i in range(0,len(st)):
+#     if st[i]== char:
+#         print(i)
+
+
+
+
+# # find the missing numbers from the list
+
+# lst=[1,2,8,5,6,7,10,11,14]
+
+# maxnum=max(lst)
+# minnum=min(lst)
+
+# missnums=[]
+
+# for i in range(minnum,maxnum+1):
+#     if i not in lst:
+#         missnums.append(i)
+# print(missnums)
