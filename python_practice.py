@@ -464,3 +464,165 @@
 #     if i not in lst:
 #         missnums.append(i)
 # print(missnums)
+
+
+
+
+# # ATM machine 
+
+# print("Welcome to State bank of India")
+# p=int(input("Enter your 4 digit pin number: "))
+# m = 25000
+
+# if(p == 1234):
+#     print("1-Withdraw")
+#     print("2-Balance Enquiry")
+#     print("3-Fast Cash")
+#     c = int(input("Please choose transactions: "))
+#     if (c == 1):
+#         w=int(input("Enter withdraw amount: "))
+#         if (w < m and w%100 == 0):
+#             print("Please take your amount:", w)
+#         else:
+#             print("Invalid cash")
+
+#     elif(c==2):
+#         print("Your available amount : ",m)
+#     elif (c == 3):
+#         print("1->5,000")
+#         print("2->10,000")
+#         print("3->15,000")
+#         print("4->20,000")
+#         f = int(input("Enter fast cash option: "))
+#         if (f == 1 and 5000 < m):
+#             print("please take cash 5000")
+#         elif (f == 2 and 10000 < m):
+#             print("please take cash 10000")
+#         elif (f == 3 and 15000 < m):
+#             print("please take cash 15000")
+#         elif (f == 4 and 20000 < m):
+#             print("please take cash 20000")
+#         else:
+#             print("Invalid fast cash option")
+#     else:
+#         print("Wrong choice")
+# else:
+#     print("Wrong pin number")
+
+
+
+
+
+# # fetch the non-repeated element in the list
+
+# lst=[1,2,2,3,4,5,4,5]
+# lst1=[]
+# for i in lst:
+#     if lst.count(i)==1:
+#         lst1.append(i)
+# print(lst1)
+
+
+
+
+# fetch the elements which have duplicates in the list
+
+# lst=[1,2,3,4,2,1,4,5]
+
+# print(list({i for i in lst if lst.count(i)>=2}))
+
+
+
+# # fetch the elements which have duplicates in the list
+
+# lst = [1, 2, 3, 4, 2, 1, 4, 5]
+# duplicates = set()
+
+# for i in lst:
+#     count = lst.count(i)
+#     if count >= 2:
+#         duplicates.add(i)
+
+# duplicates_list = list(duplicates)
+
+# print(duplicates_list)
+
+
+
+# fetch the highest value into the list without using built-in function
+
+# lst=[10,2,45,780,77]
+
+# print(max(lst))
+
+# lst.sort()
+# print(lst[-1])
+
+# maxval=0
+
+# for i in lst:
+#     if i > maxval:
+#         maxval=i
+# print(maxval)
+
+
+
+
+
+
+# fetch the secound highest value into the list without using built-in function
+
+# lst=[10,2,45,780,77]
+
+# maxval=0
+
+# for i in lst:
+#     if i > maxval:
+#         maxval=i
+# print(maxval)
+
+# secmaxval=0
+
+# for j in lst:
+#     if j > secmaxval and j < maxval:
+#         secmaxval=j
+# print(secmaxval)
+
+
+
+
+# # fetch the repeated words  in the string
+
+# st="aaditya bandhane aadi developer aadi"
+
+# st1=st.split()
+
+# reapeted=set()
+
+# for i in st1:
+#     if st1.count(i)>1:
+#         reapeted.add(i)
+
+# reapeted_words=list(reapeted)
+# print(reapeted_words)
+
+
+
+
+# # write the program to display more repeated words
+
+# st="AAdi bandhane aaditi bandhane and bandhanepada "
+
+# st1=st.split()
+# s=set(st1)
+
+# d={}.fromkeys(s,0)
+
+# for i in st1:
+#     if i in d:
+#         d[i]=d[i]+1
+# print(d)
+
+# for i in d:
+#     if d[i]==max(d.values()):
+#         print(i)
