@@ -3,20 +3,19 @@
 # st= input("enter the name:")
 
 # count=0
-
 # for i in st:
 #     count=count+1
-# print(count)
+# print(count)    
 
 
 
 
-# #count the total numbers of words in the string
+# #count the total numbers of words in the sentence
 
-# st=input("Enter the string:")
+# st=input("enter the sentence:")
 # st1=st.split()
-# count=0
 
+# count=0
 # for i in st1:
 #     count=count+1
 # print(count)
@@ -29,7 +28,6 @@
 # st=input("enter the string:")
 
 # count=0
-
 # for i in st:
 #     if i.isupper():
 #         count=count+1
@@ -43,15 +41,13 @@
 
 # st=input("Enter the string :")
 
+# vowels="AEIOUaeiou"
 # count=0
 
-# Vowels="AEIOUaeiou"
-
 # for i in st:
-#     if i in Vowels:
+#     if i in vowels:
 #         count=count+1
 # print(count)
-
 
 
 
@@ -111,33 +107,36 @@
 
 # #fetch the char if the word have even number of char
 
-# st=input("enter the string:")
-
+# st=input("enter the sentence:")
 # st1=st.split()
-# NewList=[]
+
+# evenchar=[]
 # for i in st1:
 #     if len(i)%2==0:
-#         NewList.append(i)
-# print(NewList)
-
+#         evenchar.append(i)
+# print(evenchar)
 
 
 
 
 # #fetch the word has starts with capital latter
 
-# st=input("Enter the string:")
+# st=input("enter the sentence:")
 # st1=st.split()
-
-# NewList=[]
+# newlist=[]
 
 # import string
-# lower=string.ascii_uppercase
+
+# upper=string.ascii_uppercase
 
 # for i in st1:
-#     if i[0] in lower:
-#         NewList.append(i)
-# print(NewList)
+#     if i[0] in upper:
+#         newlist.append(i)
+# print(newlist)
+
+
+
+
 
 
 
@@ -147,8 +146,11 @@
 # st1=st.split()
 
 # NewList=[]
+
+# vowels="AEIOUaeiou"
+
 # for i in st1:
-#     if i[0].lower() not in "aeiou" and i[-1].lower() not in "aeiou":
+#     if i[0] not in vowels and i[-1] not in vowels:
 #         NewList.append(i)
 # print(NewList)
 
@@ -237,15 +239,15 @@
 
 # st=input("Enter the string :")
 
-# # st1=" ".join(reversed(st))
-# # print(st1)
+# # # st1=" ".join(reversed(st))
+# # # print(st1)
 
-# # print(st[-1::-1])
+# # # print(st[-1::-1])
 
-# st1=''
+# reverce=""
 # for i in st:
-#     st1=i+st1
-# print(st1)
+#     reverce=i+reverce
+# print(reverce)
 
 
 
@@ -297,7 +299,7 @@
 # print(st1)
 
 
-
+# //---------------------------------------------------------------------------------------------------------------------//
 
 # # interchangeing key and value in dictionary
 
@@ -346,13 +348,10 @@
 # # print(list(set(lst)))
 
 # lst1=[]
-
 # for i in lst:
 #     if i not in lst1:
 #         lst1.append(i)
 # print(lst1)
-
-
 
 
 
@@ -366,6 +365,7 @@
 #     if type(i) is int:
 #         lst1.append(i)
 # print(lst1)
+
 
 
 
@@ -408,6 +408,8 @@
 # st1=st.split()
 
 # print(" ".join(st1[-1::-1]))
+
+
 
 
 
@@ -458,12 +460,12 @@
 # maxnum=max(lst)
 # minnum=min(lst)
 
-# missnums=[]
+# missingnums=[]
 
-# for i in range(minnum,maxnum+1):
+# for i in range(minnum,maxnum):
 #     if i not in lst:
-#         missnums.append(i)
-# print(missnums)
+#         missingnums.append(i)
+# print(missingnums)
 
 
 
@@ -527,9 +529,16 @@
 
 # fetch the elements which have duplicates in the list
 
-# lst=[1,2,3,4,2,1,4,5]
+lst=[1,2,3,4,2,1,4,5]
 
 # print(list({i for i in lst if lst.count(i)>=2}))
+
+# lst1=[]
+
+# for i in lst:
+#     if lst.count(i)>=2:
+#         lst1.append(i)
+# print(list(set(lst1)))
 
 
 
@@ -573,6 +582,10 @@
 # fetch the secound highest value into the list without using built-in function
 
 # lst=[10,2,45,780,77]
+
+# lst.sort()
+
+# print(lst[-2])
 
 # maxval=0
 
@@ -626,3 +639,37 @@
 # for i in d:
 #     if d[i]==max(d.values()):
 #         print(i)
+
+
+
+# # fetch the most repeated numbers into the list..
+
+# lst=[10,10,20,30,20,10]
+
+# s=set(lst)
+
+# d={}.fromkeys(s,0)
+
+# for i in lst:
+#     d[i]=d[i]+1
+
+# for i in d:
+#     if d[i]==max(d.values()):
+#         print(i)
+
+
+
+# #swap two numbers based on the index number
+
+# lst=[10,20,30,40,50,60,70,80,90]
+
+# n1=int(input("Enter the first index number:"))
+# n2=int(input("Enter the secound index number:"))
+
+# lst[n1],lst[n2]=lst[n2],lst[n1]
+
+# print(lst)
+
+
+
+
